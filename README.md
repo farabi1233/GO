@@ -1,10 +1,9 @@
-# E-commerce API
+# User Management API
 
-A RESTful API built with Go for managing products and users in an e-commerce application.
+A RESTful API built with Go for managing users in an application.
 
 ## 🚀 Features
 
-- **Product Management**: CRUD operations for products
 - **User Management**: User registration and retrieval
 - **MySQL Database**: Persistent data storage
 - **RESTful API**: Clean HTTP endpoints
@@ -55,18 +54,10 @@ A RESTful API built with Go for managing products and users in an e-commerce app
 
 2. **Verify the server is running**
    ```bash
-   curl http://localhost:3000/products
+   curl http://localhost:3000/users
    ```
 
 ## 📚 API Endpoints
-
-### Products
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/products` | Get all products |
-| GET | `/product/{productID}` | Get product by ID |
-| POST | `/create-products` | Create a new product |
 
 ### Users
 
@@ -78,31 +69,14 @@ A RESTful API built with Go for managing products and users in an e-commerce app
 
 ## 📝 API Examples
 
-### Get All Products
-```bash
-curl http://localhost:3000/products
-```
-
-### Get Product by ID
-```bash
-curl http://localhost:3000/product/1
-```
-
-### Create Product
-```bash
-curl -X POST http://localhost:3000/create-products \
-  -H "Content-Type: application/json" \
-  -d '{
-    "title": "New Product",
-    "description": "Product description",
-    "price": 29.99,
-    "image_url": "http://example.com/image.jpg"
-  }'
-```
-
 ### Get All Users
 ```bash
 curl http://localhost:3000/users
+```
+
+### Get User by ID
+```bash
+curl http://localhost:3000/user/1
 ```
 
 ### Create User
