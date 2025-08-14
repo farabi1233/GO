@@ -19,7 +19,7 @@ A RESTful API built with Go for managing users in an application.
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/farabi1233/GO
    cd GO
    ```
 
