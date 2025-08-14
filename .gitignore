@@ -1,0 +1,33 @@
+# Binaries
+/bin/
+/obj/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+
+# Vendor folder (if using Go modules, usually not needed)
+# /vendor/
+
+# IDE/editor files
+.idea/
+*.iml
+*.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Go build files
+*.out
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
