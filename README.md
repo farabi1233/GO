@@ -64,7 +64,7 @@ A RESTful API built with Go for managing users in an application.
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/users` | Get all users |
-| GET | `/user/` | Get user by ID |
+| GET | `/user/1` | Get user by ID |
 | POST | `/create-user` | Create a new user |
 
 ## 📝 API Examples
