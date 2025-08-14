@@ -4,5 +4,5 @@ type User struct {
 	ID       int    `json:"id"`
 	UserName string `json:"username"`
 	Email    string `json:"email"`
-	Password string `json:"password"` // hide password in responses
+	Password string `json:"password"`
 }

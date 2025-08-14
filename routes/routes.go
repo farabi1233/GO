@@ -14,8 +14,8 @@ func RegisterRoutes() *http.ServeMux {
 	mux.Handle("GET /product/{productID}", http.HandlerFunc(handlers.GetProductByID))
 	mux.Handle("POST /create-products", http.HandlerFunc(handlers.CreateProduct))
 
-	mux.Handle("/users", http.HandlerFunc(controllers.GetUsers))
-	mux.Handle("/user/", http.HandlerFunc(controllers.GetUserByID))
-	mux.Handle("/create-user", http.HandlerFunc(controllers.CreateUser))
+	mux.Handle("GET /users", http.HandlerFunc(controllers.GetUsers))
+	mux.Handle("GET /user/", http.HandlerFunc(controllers.GetUserByID))
+	mux.Handle("POST /create-user", http.HandlerFunc(controllers.CreateUser))
 	return mux
 }
