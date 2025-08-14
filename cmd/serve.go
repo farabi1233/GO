@@ -5,19 +5,11 @@ import (
 	"net/http"
 
 	"ecommerce/global_router"
-	"ecommerce/handlers"
+	"ecommerce/routes"
 )
 
 func Serve() {
-	mux := http.NewServeMux() //route multiplexer
-	mux.Handle("GET /products", http.HandlerFunc(handlers.GetProducts))
-	mux.Handle("GET /product/{productID}", http.HandlerFunc(handlers.GetProductByID))
-	mux.Handle("POST /create-products", http.HandlerFunc(handlers.CreateProduct))
-
-	// User routes
-	mux.Handle("GET /users", http.HandlerFunc(handlers.GetUsers))
-	mux.Handle("GET /user/", http.HandlerFunc(handlers.GetUserByID))
-	mux.Handle("POST /create-user", http.HandlerFunc(handlers.CreateUser))
+	mux := routes.RegisterRoutes()
 
 	fmt.Println("Starting server on :3000")
 	globalRouter := global_router.GlobalRouter(mux) // Apply global CORS middleware
