@@ -4,7 +4,7 @@ A RESTful API built with Go for managing users in an application.
 
 ## 🚀 Features
 
-- **User Management**: User registration and retrieval
+- **User Management**: UserList, UserCreate, User Show
 - **MySQL Database**: Persistent data storage
 - **RESTful API**: Clean HTTP endpoints
 - **CORS Support**: Cross-origin resource sharing enabled
